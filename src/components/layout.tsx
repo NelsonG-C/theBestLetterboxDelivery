@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Button from "react-bootstrap/Button"
+import Navbar from "react-bootstrap/Navbar"
 
 interface LayoutProps {
   children: any
@@ -37,6 +39,10 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }: any) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Button>Hello</Button>
+        <Navbar>
+          <Navbar.Brand>Hello Again</Navbar.Brand>
+        </Navbar>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
