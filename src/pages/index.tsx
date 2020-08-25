@@ -1,64 +1,71 @@
 import React from "react"
 import { Link } from "gatsby"
 
+//components
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import LineDivider from "../components/lines"
+
 import { Row, Col, Carousel, Button } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import gatsbyImg from "../images/gatsby-astronaut.png"
 
 //bootstrap minimum stylesheet
 import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles.css"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Container>
+    <Container className="home-container">
       <Row>
-        <Col md lg="8">
-          <h2>Delivering Flyers all across Seymour</h2>
-          <p>Servicing Seymour, Nagambie and Puckapunyal flyer drops</p>
-        </Col>
-        <Col>
-          <img alt="slogan block" src={gatsbyImg} width="300" height="300" />
-        </Col>
-      </Row>
-    </Container>
-    <Container>
-      <h2 className="text-center">About</h2>
-      <Row>
-        <Col>
-          <img alt="about block" src={gatsbyImg} width="200" height="200" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
-            totam sit ut, soluta facere accusantium laborum facilis dolorum
-            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
-            aperiam et molestiae!
-          </p>
-        </Col>
-        <Col>
-          <img alt="about block" src={gatsbyImg} width="200" height="200" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
-            totam sit ut, soluta facere accusantium laborum facilis dolorum
-            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
-            aperiam et molestiae!
-          </p>
-        </Col>
-        <Col>
-          <img alt="about block" src={gatsbyImg} width="200" height="200" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
-            totam sit ut, soluta facere accusantium laborum facilis dolorum
-            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
-            aperiam et molestiae!
+        <Col className="heading-col">
+          <h1 className="title-heading">
+            Delivering Flyers all across Seymour
+          </h1>
+          <p className="subtitle-heading">
+            Servicing Seymour, Nagambie and Puckapunyal flyer drops
           </p>
         </Col>
       </Row>
     </Container>
-    <Container>
-      <h2 className="text-center">Testimonials</h2>
+    <LineDivider colorName="pinkline" />
+    <Container className="about-container">
+      <h2 className="about text-center">About</h2>
+      <Row className="about-row">
+        <Col xs={12} md={4} className="about-col">
+          <img alt="about block" src={gatsbyImg} width="200" height="200" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
+            totam sit ut, soluta facere accusantium laborum facilis dolorum
+            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
+            aperiam et molestiae!
+          </p>
+        </Col>
+        <Col xs={12} md={4} className="about-col">
+          <img alt="about block" src={gatsbyImg} width="200" height="200" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
+            totam sit ut, soluta facere accusantium laborum facilis dolorum
+            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
+            aperiam et molestiae!
+          </p>
+        </Col>
+        <Col xs={12} md={4} className="about-col">
+          <img alt="about block" src={gatsbyImg} width="200" height="200" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe
+            totam sit ut, soluta facere accusantium laborum facilis dolorum
+            tempora voluptates, incidunt eaque ducimus assumenda amet blanditiis
+            aperiam et molestiae!
+          </p>
+        </Col>
+      </Row>
+    </Container>
+    <LineDivider colorName="yellowline" />
+    <Container className="t-container">
+      <h2 className="testimonial-heading text-center">Testimonials</h2>
       <Carousel>
         <Carousel.Item className="carousel-item">
           <h3>First Slide Panel detailing the testimonial from the customer</h3>
