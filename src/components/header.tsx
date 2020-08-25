@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
 //Image
-import logo from "../images/gatsby-icon.png"
+import logo from "../images/mailbox.png"
 
 interface HeaderProps {
   siteTitle: string
@@ -16,24 +16,24 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `pink`,
       marginBottom: `1.45rem`,
     }}
   >
     <Navbar expand="md">
-      <Navbar.Brand>
+      <Navbar.Brand className="align-middle">
         <img
           alt="The best letterbox delivery"
           src={logo}
-          width="30"
-          height="30"
+          width="40"
+          height="40"
           className="d-inline-block align-top mr-3"
         />
         The Best Letterbox Delivery
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="nav-button" />
       <Navbar.Collapse id="nav-button" className="justify-content-end">
-        <Nav>
+        <Nav fill>
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#services">Services</Nav.Link>
           <Nav.Link href="#testimonials">Testimonials</Nav.Link>
@@ -41,22 +41,6 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    <div
-      style={{
-        margin: `0 2rem`,
-        maxWidth: 960,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        ></Link>
-      </h1>
-    </div>
   </header>
 )
 
