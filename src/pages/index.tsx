@@ -34,7 +34,10 @@ const IndexPage = () => (
       </div>
     </Container>
     <Container>
-      <ServicesList />
+      <h2 className="about text-center">Services</h2>
+      <Container className="test">
+        <ServicesList />
+      </Container>
     </Container>
     <Container className="about-container">
       <h2 className="about text-center">About</h2>
