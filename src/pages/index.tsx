@@ -18,19 +18,20 @@ import "../styles.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Container className="home-container">
-      <Row>
-        <Col className="heading-col">
-          <h1 className="title-heading">
-            Delivering Flyers all across Seymour
-          </h1>
-          <p className="subtitle-heading">
-            Servicing Seymour, Nagambie and Puckapunyal flyer drops
-          </p>
-        </Col>
-      </Row>
+    <Container className="home-container" fluid>
+      <div className="overlay">
+        <Row>
+          <Col className="heading-col">
+            <h1 className="title-heading">
+              Delivering Flyers all across Seymour
+            </h1>
+            <p className="subtitle-heading">
+              Servicing Seymour, Nagambie and Puckapunyal flyer drops
+            </p>
+          </Col>
+        </Row>
+      </div>
     </Container>
-    <LineDivider colorName="pinkline" />
     <Container className="about-container">
       <h2 className="about text-center">About</h2>
       <Row className="about-row">
