@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import LineDivider from "../components/lines"
+import ServicesList from "../components/servicesList"
 
 import { Row, Col, Carousel, Button } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
@@ -31,6 +32,9 @@ const IndexPage = () => (
           </Col>
         </Row>
       </div>
+    </Container>
+    <Container>
+      <ServicesList />
     </Container>
     <Container className="about-container">
       <h2 className="about text-center">About</h2>
