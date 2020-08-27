@@ -16,7 +16,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
   <header
     style={{
-      background: `pink`,
+      background: `#ee4cc0`,
       marginBottom: `1.45rem`,
     }}
   >

@@ -36,9 +36,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }: any) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
           <Link to="home">Home</Link>
           <p>
             <a>0427991708</a>
@@ -46,6 +43,9 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }: any) => {
           <p font-size="11px">
             <a>thebestletterboxdelivery@bigpond.com</a>
           </p>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>

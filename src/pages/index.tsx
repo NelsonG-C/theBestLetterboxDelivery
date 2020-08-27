@@ -83,9 +83,10 @@ const IndexPage = () => (
         </Carousel.Item>
       </Carousel>
     </Container>
-    <Container>
+    <LineDivider colorName="pinkline" />
+    <Container className="quote-container">
       <Row>
-        <Col>
+        <Col className="quote-text">
           <h2>Get A Quote</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
@@ -94,10 +95,12 @@ const IndexPage = () => (
             adipisci impedit. Officiis!
           </p>
         </Col>
-        <Col>
-          <h3>Phone: 0427 991 708</h3>
+        <Col md lg={4} className="quote-details-col">
+          <h3 className="quote-details">Phone: 0427 991 708</h3>
           <Button>Call Now</Button>
-          <h3>Email: thebestletterboxdelivery@bigpond.com</h3>
+          <h3 className="quote-details">
+            Email: thebestletterboxdelivery@bigpond.com
+          </h3>
           <Button>Email</Button>
         </Col>
       </Row>
