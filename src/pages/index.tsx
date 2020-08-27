@@ -34,13 +34,13 @@ const IndexPage = () => (
       </div>
     </Container>
     <Container>
-      <h2 className="about text-center">Services</h2>
+      <h2 className="service-heading text-center">Services</h2>
       <Container className="test">
         <ServicesList />
       </Container>
     </Container>
     <Container className="about-container">
-      <h2 className="about text-center">About</h2>
+      <h2 className="about-heading text-center">About</h2>
       <Row className="about-row">
         <Col xs={12} md={4} className="about-col">
           <img alt="about block" src={gatsbyImg} width="200" height="200" />
