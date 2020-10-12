@@ -1,0 +1,191 @@
+* {
+  font-family: Raleway !important;
+}
+
+body {
+  background-color: #f8f8ff !important;
+}
+
+h2 {
+  font-weight: bold !important;
+}
+
+header {
+  margin-bottom: 0 !important;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.home-container {
+  background: url("./images/letterbox.jpg") no-repeat;
+  background-size: cover;
+  height: 40rem;
+  padding: 0 !important;
+}
+
+.overlay {
+  height: 40rem;
+  background: rgb(0, 0, 0, 0.3);
+}
+
+.navbar {
+  box-shadow: 3px 9px 5px -3px rgba(0, 0, 0, 0.2);
+}
+.nav-link {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: black !important;
+}
+
+.navbar-brand {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.page-container {
+  max-width: 100% !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.pinkline {
+  width: 50%;
+  height: 4px;
+  background-color: #f522b9;
+  border-radius: 25px;
+  margin: 0 auto 0.2rem auto;
+  box-shadow: 3px 9px 5px -3px rgba(0, 0, 0, 0.1);
+}
+
+.yellowline {
+  width: 50%;
+  height: 4px;
+  background-color: #f7ff0f;
+  border-radius: 25px;
+  margin: 0 auto 0.2rem auto;
+  box-shadow: 3px 9px 5px -3px rgba(0, 0, 0, 0.1);
+}
+
+.blackline {
+  width: 55%;
+  height: 4px;
+  background-color: black;
+  border-radius: 25px;
+  margin: 0 auto 0.2rem auto;
+}
+
+.heading-col {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20% !important;
+}
+
+.title-heading {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  font-weight: bold !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  color: white;
+  width: 50%;
+  text-shadow: 1px 0 #888888;
+}
+
+.subtitle-heading {
+  text-align: center;
+  font-size: 22px;
+  margin: 1rem auto 5rem auto;
+  width: 80%;
+  color: white;
+}
+
+.about-container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 !important;
+  background-color: pink;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  min-width: 100%;
+}
+
+.service-heading {
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+
+.about-heading {
+  font-size: 42px;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.about-row {
+  margin-top: 2rem;
+}
+
+.about-col {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.testimonial-heading {
+  margin-bottom: 4rem;
+}
+
+.t-container {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  border-radius: 25px;
+  box-shadow: 0px 0px 9px 10px rgba(0, 0, 0, 0.12);
+}
+
+.active {
+  border-radius: 25px;
+}
+
+.carousel-item {
+  background-color: rgba(245, 34, 185, 0.1);
+  border-radius: 25px;
+  height: 20rem;
+}
+
+.carousel-inner {
+  border-radius: 25px;
+}
+
+.test {
+  columns: 2 auto;
+  height: 100%;
+  min-height: 250px;
+}
+
+.icons {
+  height: 50px;
+  width: 50px !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 2.5rem;
+  border-radius: 50%;
+  outline: 4px solid #ee4cc0;
+  outline-offset: 15px;
+}
+
+.text-service {
+  width: 100px;
+  font-weight: bold;
+  font-size: 22px;
+}

@@ -6,13 +6,14 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 import Button from "react-bootstrap/Button"
-import Navbar from "react-bootstrap/Navbar"
+
+//Styles
+import "../styles.css"
 
 interface LayoutProps {
   children: any
@@ -32,19 +33,16 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }: any) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <Button>Hello</Button>
-        <Navbar>
-          <Navbar.Brand>Hello Again</Navbar.Brand>
-        </Navbar>
+      <div>
         <main>{children}</main>
         <footer>
+          <Link to="home">Home</Link>
+          <p>
+            <a>0427991708</a>
+          </p>
+          <p font-size="11px">
+            <a>thebestletterboxdelivery@bigpond.com</a>
+          </p>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
